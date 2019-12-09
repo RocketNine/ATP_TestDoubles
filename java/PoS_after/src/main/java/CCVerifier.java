@@ -20,15 +20,15 @@ public class CCVerifier implements ICCVerifier {
         return sufficientFunds(amount);
     }
 
+    private boolean sufficientFunds(double amount) {
+        return (amount <= AVAILABLE_CREDIT) && (amount <= SINGLE_CHARGE_LIMIT);
+    }
+
     private void thisCallIsCostly() {
         try {
             Thread.sleep(10000);
         } catch (InterruptedException e) {
             // ignored for demo purpose
         }
-    }
-
-    private boolean sufficientFunds(double amount) {
-        return (amount <= AVAILABLE_CREDIT) && (amount <= SINGLE_CHARGE_LIMIT);
     }
 }
