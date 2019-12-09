@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class GildedRoseTest {
+public class TestDouble_Dummy {
 
     private final String IGNORED_STRING = null;
     private final int IGNORED_INT = -99;
