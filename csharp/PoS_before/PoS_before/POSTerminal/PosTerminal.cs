@@ -4,16 +4,16 @@ namespace POSTerminal
 {
     public class PosTerminal
     {
-        private CCVerifier ccVerifier;
+        readonly CcVerifier _ccVerifier;
 
         public PosTerminal()
         {
-            this.ccVerifier = CCVerifier.getInstance();
+            this._ccVerifier = CcVerifier.GetInstance();
         }
         
         void VerifySale(double amount)
         {
-            if (!ccVerifier.approveCharge(amount))
+            if (!_ccVerifier.ApproveCharge(amount))
             {
                 throw new InvalidChargeException();
             }

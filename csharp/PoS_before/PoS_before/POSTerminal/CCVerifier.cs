@@ -2,28 +2,28 @@ using System.Threading;
 
 namespace POSTerminal
 {
-    public class CCVerifier
+    public class CcVerifier
     {
-        private static CCVerifier instance;
+        private static CcVerifier _instance;
         private static double AVAILABLE_CREDIT = 2000;
         private static double SINGLE_CHARGE_LIMIT = 250;
 
-        private CCVerifier()
+        private CcVerifier()
         {
             // only access via getInstance
         }
         
-        public static CCVerifier getInstance()
+        public static CcVerifier GetInstance()
         {
-            if (null == instance)
+            if (null == _instance)
             {
-                instance = new CCVerifier();
+                _instance = new CcVerifier();
             }
 
-            return instance;
+            return _instance;
         }
 
-        public bool approveCharge(double amount)
+        public bool ApproveCharge(double amount)
         {
             ThisCallIsCostly();
             return SufficientFunds(amount);
