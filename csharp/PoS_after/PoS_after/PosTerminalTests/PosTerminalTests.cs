@@ -11,9 +11,10 @@ namespace PosTerminalTests
             // This test uses the real CcVerifier class and takes a long time
             PosTerminal.PosTerminal sut = new PosTerminal.PosTerminal();
             
-            sut.VerifySale(10.0);
-            
-            Assert.Pass("no exception was expected");
+            Assert.DoesNotThrow(() =>
+            {
+                sut.VerifySale(10.0);
+            });
         }
 
         [Test]
@@ -24,9 +25,10 @@ namespace PosTerminalTests
 
             PosTerminal.PosTerminal sut = new PosTerminal.PosTerminal(mockCcVerifier);
             
-            sut.VerifySale(10.0);
-
-            Assert.Pass("no exception was expected");
+            Assert.DoesNotThrow(() =>
+            {
+                sut.VerifySale(10.0);
+            });
         }
     }
 
