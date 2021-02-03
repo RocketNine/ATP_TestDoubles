@@ -1,7 +1,6 @@
 using System;
-using PoS_after;
 
-namespace PosTerminal
+namespace PosExample
 {
     public class PosTerminal
     {

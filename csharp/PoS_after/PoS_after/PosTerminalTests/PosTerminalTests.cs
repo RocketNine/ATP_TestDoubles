@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using PosTerminal;
+using PosExample;
 
 namespace PosTerminalTests
 {
@@ -9,8 +9,8 @@ namespace PosTerminalTests
         public void VerifySale_AmountUnderSingleChargeLimit_IsApproved()
         {
             // This test uses the real CcVerifier class and takes a long time
-            PosTerminal.PosTerminal sut = new PosTerminal.PosTerminal();
-            
+            PosTerminal sut = new PosTerminal();
+
             Assert.DoesNotThrow(() =>
             {
                 sut.VerifySale(10.0);
@@ -22,8 +22,8 @@ namespace PosTerminalTests
         public void VerifySale_viaMock_AmountUnderSingleChargeLimit_IsApproved()
         {
             ICcVerifier mockCcVerifier = new MockCcVerifier();
-
-            PosTerminal.PosTerminal sut = new PosTerminal.PosTerminal(mockCcVerifier);
+        
+            PosTerminal sut = new PosTerminal(mockCcVerifier);
             
             Assert.DoesNotThrow(() =>
             {

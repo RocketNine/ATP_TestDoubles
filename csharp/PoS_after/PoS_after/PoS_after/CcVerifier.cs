@@ -1,7 +1,6 @@
 using System.Threading;
-using PosTerminal;
 
-namespace PoS_after
+namespace PosExample
 {
     public class CcVerifier : ICcVerifier
     {

@@ -1,4 +1,4 @@
-namespace PosTerminal
+namespace PosExample
 {
     public interface ICcVerifier
     {
