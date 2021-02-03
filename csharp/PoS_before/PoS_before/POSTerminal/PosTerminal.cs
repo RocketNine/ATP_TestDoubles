@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace POSTerminal
+namespace PosExample
 {
     public class PosTerminal
     {

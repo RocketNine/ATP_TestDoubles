@@ -1,6 +1,6 @@
 using System.Threading;
 
-namespace POSTerminal
+namespace PosExample
 {
     public class CcVerifier
     {
