@@ -3,5 +3,7 @@
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::3DA485CC-B665-41D7-8BF6-376F5DDC14D5::.NETCoreApp,Version=v3.1::GildedRose.GildedRoseTest&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::3DA485CC-B665-41D7-8BF6-376F5DDC14D5::.NETCoreApp,Version=v3.1::GildedRose.TestDouble_Dummy&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3DA485CC-B665-41D7-8BF6-376F5DDC14D5::.NETCoreApp,Version=v3.1::GildedRose.TestDouble_Fake.LegendaryItem_QualityDoesNotChange&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3DA485CC-B665-41D7-8BF6-376F5DDC14D5::.NETCoreApp,Version=v3.1::GildedRose.TestDouble_Fake&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
