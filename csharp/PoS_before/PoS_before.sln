@@ -1,6 +1,6 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSTerminal", "POSTerminal\POSTerminal.csproj", "{AF3DDD2D-953F-4F07-BB14-024DFD7FFBD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POSTerminal", "POSTerminal\POSTerminal.csproj", "{AF3DDD2D-953F-4F07-BB14-024DFD7FFBD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

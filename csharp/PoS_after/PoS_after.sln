@@ -1,8 +1,8 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoS_after", "PoS_after\PoS_after.csproj", "{C0C48896-36B8-4238-A858-7349B038151E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoS_after", "PoS_after\PoS_after.csproj", "{C0C48896-36B8-4238-A858-7349B038151E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosTerminalTests", "PosTerminalTests\PosTerminalTests.csproj", "{EF36A1EA-BC13-4121-AC08-4EC5AC1EDEB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PosTerminalTests", "PosTerminalTests\PosTerminalTests.csproj", "{EF36A1EA-BC13-4121-AC08-4EC5AC1EDEB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
