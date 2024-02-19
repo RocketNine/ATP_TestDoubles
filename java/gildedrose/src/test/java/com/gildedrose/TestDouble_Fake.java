@@ -38,7 +38,6 @@ public class TestDouble_Fake {
     }
 
 
-
     private Item[] stockOneOfEachItem() {
         return new Item[]{
                 new Item(GENERIC, 10, 20),
@@ -49,6 +48,4 @@ public class TestDouble_Fake {
                 new Item(LEGENDARY_SULFURAS, 25, LEGENDARY_ITEM_QUALITY),
         };
     }
-
-
 }
