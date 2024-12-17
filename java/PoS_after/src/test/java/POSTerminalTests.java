@@ -1,12 +1,11 @@
-import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class POSTerminalTests {
 
-    @Test(expected = Test.None.class /* no exception expected */ )
+    @Test
     public void VerifySale_AmountUnderSingleChargeLimit_IsApproved() {
         // Using the real instance is costly in terms of time
 
@@ -19,8 +18,8 @@ public class POSTerminalTests {
         }
     }
 
-    @Test(expected = Test.None.class /* no exception expected */ )
-    @Ignore
+    @Test
+    @Disabled("Remove to show faster feedback by using Test Double")
     public void VerifySale_ViaMock_AmountUnderSingleChargeLimit_IsApproved() {
         ICCVerifier mockCCVerifier = new MockCCVerifier();
 
@@ -40,6 +39,4 @@ public class POSTerminalTests {
             return true;
         }
     }
-
-
 }
