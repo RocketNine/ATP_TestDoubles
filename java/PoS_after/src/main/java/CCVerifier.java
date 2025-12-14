@@ -1,5 +1,3 @@
-import static java.lang.Thread.sleep;
-
 public class CCVerifier implements ICCVerifier {
     private static final double AVAILABLE_CREDIT = 2000;
     private static final double SINGLE_CHARGE_LIMIT = 250;
@@ -27,7 +25,7 @@ public class CCVerifier implements ICCVerifier {
     private void thisCallIsCostly() {
         try {
             Thread.sleep(10000);
-        } catch (InterruptedException e) {
+        } catch (InterruptedException _) {
             // ignored for demo purpose
         }
     }
