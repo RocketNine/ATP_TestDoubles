@@ -13,7 +13,7 @@ class POSTerminalTests {
 
         try {
             sut.verifySale(10);
-        } catch (POSTerminal.InvalidChargeException _) {
+        } catch (POSTerminal.InvalidCharge _) {
             fail("Amount was under Single Charge Amount - exception not expected!");
         }
     }
@@ -27,7 +27,7 @@ class POSTerminalTests {
 
         try {
             sut.verifySale(10);
-        } catch (POSTerminal.InvalidChargeException _) {
+        } catch (POSTerminal.InvalidCharge _) {
             fail("Amount was under Single Charge Amount - exception not expected!");
         }
     }

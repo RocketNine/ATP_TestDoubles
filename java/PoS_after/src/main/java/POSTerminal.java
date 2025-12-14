@@ -9,14 +9,14 @@ public class POSTerminal {
         this.ccVerifier = ccVerifier;
     }
 
-    void verifySale(double amount) throws InvalidChargeException {
+    void verifySale(double amount) throws InvalidCharge {
         if (!ccVerifier.approveCharge(amount)) {
-            throw new InvalidChargeException();
+            throw new InvalidCharge();
         }
     }
 
-    public class InvalidChargeException extends Throwable {
-        public InvalidChargeException() {
+    public static class InvalidCharge extends Throwable {
+        public InvalidCharge() {
             super("Charge exceeds single transaction amount or credit limit");
         }
     }
