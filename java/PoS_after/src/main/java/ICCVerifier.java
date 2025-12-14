@@ -1,3 +1,3 @@
 public interface ICCVerifier {
-    public boolean approveCharge(double amount);
+    boolean approveCharge(double amount);
 }
