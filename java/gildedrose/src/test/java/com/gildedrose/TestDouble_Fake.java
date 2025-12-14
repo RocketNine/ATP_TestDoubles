@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestDouble_Fake {
+class TestDouble_Fake {
 
     private static final String GENERIC = "generic";
     private static final String AGED_BRIE = "Aged Brie";
@@ -14,7 +14,7 @@ public class TestDouble_Fake {
     private static final int LEGENDARY_ITEM_QUALITY = 80;
 
     @Test
-    public void GenericItem_SellIn_Decreases() {
+    void GenericItem_SellIn_Decreases() {
         Item[] items = stockOneOfEachItem();
         GildedRose sut = new GildedRose(items);
 
@@ -26,7 +26,7 @@ public class TestDouble_Fake {
     }
 
     @Test
-    public void LegendaryItem_QualityDoesNotChange() {
+    void LegendaryItem_QualityDoesNotChange() {
         Item[] items = stockOneOfEachItem();
         GildedRose sut = new GildedRose(items);
 
